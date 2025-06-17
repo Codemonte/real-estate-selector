@@ -1,129 +1,87 @@
-Perfect! Here's a clean and professional `README.md` tailored for your **Mini Real Estate Floor Selector** React project:
+
+#  Real Estate Floor Selector
+
+An interactive web-based tool for selecting towers, exploring their floors, and viewing apartment layouts — built to simulate a real estate booking or property showcasing experience.
 
 ---
 
-```markdown
-# 🏢 Real Estate Floor Selector (React + TypeScript)
+##  Features
 
-An interactive frontend prototype that allows users to explore buildings (towers), view available floors, and inspect apartment layouts — designed for a real estate browsing experience.
-
----
-
-## 🚀 Features
-
-- **Tower Overview Page**  
-  Select from three towers (A, B, and C) displayed as interactive cards.
-
-- **Floor Selector View**  
-  View a list of 10–15 floors per tower. Floors are clickable and visually styled.
-
-- **Apartment Layouts View**  
-  Browse 3–4 apartment layouts per floor. Each layout includes:
-  - Thumbnail image (placeholder)
-  - Metadata: area, unit type, room count
-
-- **Detailed Layout View**  
-  Displays a larger layout image and full metadata.
-
-- **Smooth Transitions**  
-  Pages animate on entry/exit using Framer Motion for a polished user experience.
-
-- **Responsive Design**  
-  Mobile-friendly grid and text layout with responsive interactions.
-
-- **Animated Hover Effects**  
-  Layout thumbnails scale slightly and cast shadows on hover (or tap for mobile).
+- **Tower Overview** — Select from available towers with visual thumbnails.
+- **Floor Navigation** — Choose floors dynamically per tower.
+- **Layout Preview** — See apartment layout thumbnails and basic details.
+- **Layout Detail View** — Zoom into individual layouts for more insight.
+- **Smooth Transitions** — Page animations using Framer Motion.
+- **Back Navigation** — Intuitive user navigation flow with consistent UI.
 
 ---
 
-## 🧰 Built With
+##  Built With
 
-- **React** + **TypeScript** (with React Router)
-- **Framer Motion** for page transitions
-- **CSS Modules / Plain CSS** for styling
-- **Vite / CRA** (depending on your setup)
+- **React** (TypeScript) — Frontend framework
+- **React Router v6** — Routing and dynamic path parameters
+- **Framer Motion** — Smooth animated transitions between pages
+- **CSS Modules** — Custom styling
+- **Mock Data** — Simulated real estate data (towers, floors, layouts)
 
 ---
 
-## 🗂️ Project Structure
+##  Live Demo
+
+ [Live Demo on Vercel](https://real-estate-selector-eight.vercel.app/) 
+
+---
+
+## Project Walkthrough
+
+[Watch the 1–2 minute walkthrough](https://www.loom.com/share/462fa677d50045c1935b2050f60f32ca?sid=f19302f6-957e-4b15-8b2c-b1eba3e80012) 
+
+---
+
+## Folder Structure
 
 ```
 
 src/
-├── components/        # Reusable UI components (TowerCard, BackButton, etc.)
-├── pages/             # Route-level pages
-├── data/              # Mock data for towers, floors, layouts
-├── App.tsx            # Main app routing
-└── styles.css         # Global and responsive styling
+├── components/        // Reusable UI components (e.g. Header, BackButton)
+├── data/              // Mock data for towers, floors, layouts
+├── pages/             // TowerOverview, FloorView, LayoutsView, LayoutDetailView
+├── App.tsx            // Main app logic and animated routing
+├── index.tsx          // Entry point
 
 ````
 
 ---
 
-## 🧪 Known Limitations
+## Known Limitations
 
-- All data is static and mock-based (no backend integration).
-- Layout images are placeholders.
-- Unit filtering and availability status are not included.
+- Currently uses mock data — not connected to a backend or API.
+- No mobile responsiveness (optional to add).
+- Image thumbnails are statically referenced and must be stored locally in `public/`.
 
 ---
 
-## 📦 Getting Started
+## 💻 Getting Started
 
-### 1. Clone the repo
+### Clone & Run Locally
+
 ```bash
-git clone https://github.com/your-username/real-estate-selector.git
+git clone https://github.com/Codemonte/real-estate-selector.git
 cd real-estate-selector
+npm install
+npm start
 ````
 
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the development server
-
-```bash
-npm start
-```
+The app will run on `http://localhost:3000`.
 
 ---
 
-## 🌐 Live Demo
+## Acknowledgments
 
-[View deployed demo on Vercel/Netlify](https://your-deployment-url.com)
-
----
-
-## 🎥 Loom Video Walkthrough
-
-[Watch 1–2 minute walkthrough](https://your-loom-video-link.com)
+Inspired by modern real estate selection tools and interactive floor selectors.
 
 ---
 
-## 🤝 Author
+## 📄 License
 
-**Raphael Chukwudi Isaac**
-Frontend Developer | Software Engineering Student
-[GitHub Profile](https://github.com/your-username)
-
----
-
-## 📝 License
-
-This project is for demo purposes only and not licensed for production use.
-
-```
-
----
-
-### ✅ To complete this:
-
-- Replace:
-  - `https://github.com/your-username/...` with your real GitHub repo URL
-  - `https://your-deployment-url.com` with your Vercel or Netlify demo URL
-  - `https://your-loom-video-link.com` with your screen recording link
-
-Would you like help deploying to **Vercel**, generating the **Loom script**, or writing commit messages?
-```
+This project is open source and available under the [MIT License](LICENSE).
